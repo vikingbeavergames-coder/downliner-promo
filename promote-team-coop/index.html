@@ -19,6 +19,30 @@
         .team-logo span {
             color: #00d4ff;
         }
+                .team-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .team-profile img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #00d4ff;
+            box-shadow: 0 0 12px rgba(0, 212, 255, 0.3);
+        }
+        .team-profile .presented {
+            font-size: 12px;
+            color: #b0b0cc;
+            line-height: 1.3;
+        }
+        .team-profile .presented strong {
+            display: block;
+            font-size: 14px;
+            color: #fff;
+        }
         .partner-logo {
             position: fixed;
             top: 16px;
@@ -121,7 +145,13 @@
     </style>
 </head>
 <body>
-    <div class="team-logo">🎯 <span>Downliner</span><br>Affiliate Pro Team</div>
+    <div class="team-logo">
+        🎯 <span>Downliner</span><br>Affiliate Pro Team
+        <div class="team-profile">
+            <img src="data:image/jpeg;base64,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" alt="Sebastian">
+            <span class="presented">presented by<strong>Sebastian</strong></span>
+        </div>
+    </div>
     <a href="https://thedownliner.com/?r=43752" class="partner-logo"><img src="https://thedownliner.com/images/tdlpartner.png" title="The Ultimate Cooperative" alt="The Downliner - The Ultimate Cooperative"/></a>
     <div class="container">
         <div class="badge">👥 TEAM PROMO</div>
